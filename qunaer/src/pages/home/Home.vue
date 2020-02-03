@@ -1,11 +1,15 @@
 <template>
   <div>
-    <h1>你好</h1>
+    <home-header></home-header>
   </div>
 </template>
 <script>
+import HomeHeader from './components/homeHeader'
 export default {
   name: 'Home',
+  components: {
+    HomeHeader
+  },
   data: function () {
     return {
 
