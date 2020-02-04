@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="items of swiperList" :key="items.id" data-swiper-autoplay="2000">
+      <swiper-slide v-for="items of swiperList" :key="items.id">
         <img class="swiper-img" :src="items.pic">
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
@@ -19,14 +19,14 @@ export default {
         {'id': '003', 'pic': 'http://imgs.qunarzz.com/vc/ad/7c/fe/037d1a400372ff57b0030d1d1c.jpg_92.jpg'}
       ],
       swiperOption: {
-        pagination: { //小点
-          el: '.swiper-pagination' 
+        pagination: {
+          el: '.swiper-pagination'
         },
-        autoplay: { //自动播放
-          delay: 5000 
+        autoplay: {
+          delay: 5000
         },
-        loop: true, //循环播放
-        speed: 1000 //动画运动速度
+        loop: true,
+        speed: 1000
       }
     }
   }
@@ -39,7 +39,7 @@ export default {
   padding-bottom: 30.47%
   overflow: hidden
   background: #ccc
-  >>> .swiper-pagination-bullet-active 
+  >>> .swiper-pagination-bullet-active
     background: #fff !important
   .swiper-img
     width: 100%
