@@ -14,7 +14,7 @@ export default {
   margin-top: -.02rem
   background: $bgColor
   padding: .1rem
- .search-input{
+ .search-input
    width: 100%
    border-radius: .06rem
    line-height: .62rem
@@ -22,5 +22,4 @@ export default {
    padding: 0 .1rem
    color: #666
    text-align: center
- }
 </style>
