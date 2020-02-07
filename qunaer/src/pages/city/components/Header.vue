@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" ref="header">
     <router-link to="/">
       <div class="iconfont back-icon">&#xe609;</div>
     </router-link>
@@ -8,7 +8,10 @@
 </template>
 <script>
 export default {
-  name: 'CityHeader'
+  name: 'CityHeader',
+  mounted () {
+    this.$emit('change', this.$refs.header.offsetHeight)
+  }
 }
 </script>
 <style lang="stylus" scoped>
