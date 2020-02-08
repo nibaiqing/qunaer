@@ -2,7 +2,14 @@
   <div class="recommend-container">
     <div class="title">今日推荐</div>
     <ul class="recommend-wrapper">
-      <li class="recommend-list border-bottom" v-for="item of list" :key="item.id">
+      <router-link
+        tag="li"
+        class="recommend-list
+        border-bottom"
+        v-for="item of list"
+        :key="item.id"
+        :to="'/detail/' + item.id"
+      >
         <img class="recommend-img" :src="item.imgUrl">
         <div class="recommend-about">
           <p class="recommend-title">{{item.title}}</p>
@@ -10,7 +17,7 @@
           <p class="recommend-price"><span>¥{{item.price}}</span><span class="recommend-text">起</span>
           </p>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
