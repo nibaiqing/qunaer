@@ -35,7 +35,7 @@ export default {
       height: .36rem
       margin-right: .1rem
       display: inline-block
-      background: url(http://s.qunarzz.com/piao/image/touch/sight/detail.png) 0 -.45rem no-repeat
+      background: url('http://s.qunarzz.com/piao/image/touch/sight/detail.png') 0 -.45rem no-repeat
       background-size: .4rem 3rem
   .item-children
       padding: 0 .2rem

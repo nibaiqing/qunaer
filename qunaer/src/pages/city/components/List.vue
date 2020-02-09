@@ -79,11 +79,10 @@ export default {
     border-color: #ccc
 .list
   overflow: hidden
-  width: 100%
   position: absolute
-  left: 0
-  rigth: 0
   top: 1.66rem
+  left: 0
+  right: 0
   bottom: 0
   .title
     height: .54rem
@@ -103,7 +102,6 @@ export default {
         border: .02rem solid #ccc
         border-radius: .06rem
         text-align: center
-        padding: .1rem
   .item-list
     .item
       line-height: .76rem

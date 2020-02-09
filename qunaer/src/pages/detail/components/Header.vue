@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      const scrollTop = document.documentElement.scrollTop
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       if (scrollTop > 60) {
         let opacity = scrollTop / 140
         opacity = opacity > 1 ? 1 : opacity
@@ -44,10 +44,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
